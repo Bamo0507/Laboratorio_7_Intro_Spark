@@ -1,0 +1,7 @@
+# el proyecto se monta como volumen; no copiar datos ni basura al build
+data/
+notebooks/
+.git/
+.venv/
+**/__pycache__/
+**/.ipynb_checkpoints/

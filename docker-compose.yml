@@ -1,0 +1,10 @@
+services:
+  pyspark:
+    build: .
+    image: lab7-spark:3.5
+    container_name: lab7-spark
+    ports:
+      - "8888:8888"   # Jupyter
+      - "4040:4040"   # Spark UI
+    volumes:
+      - ./:/opt/app   # todo el proyecto: data/, notebooks/, src/
